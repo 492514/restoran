@@ -69,17 +69,19 @@ main .view1 .container1 .box1 p {
   font-weight: 400;
 }
 main .view1 .container1 .box2 {
-  height: 42%;
+  height: 35%;
   display: flex;
-  margin-top: 4rem;
-  overflow: visible;
+  overflow: hidden;
   align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   justify-content: center;
 }
 main .view1 .container1 .box2 img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
+  width: 80%;
+  max-width: 400px;
+  will-change: transform;
   animation: rotate 22s linear infinite;
 }
 @keyframes rotate {
@@ -123,7 +125,7 @@ main .view2 .info p {
   text-transform: capitalize;
 }
 main .view2 .info:hover {
-  transform: scale(1);
+  transform: scale(1.05);
   transition: all 0.4s ease;
   background-color: #FEA116;
   color: #ffffff;
@@ -155,8 +157,8 @@ main .view3 .box1 .container {
   margin-top: 1rem;
 }
 main .view3 .box1 .container img {
-  height: 50%;
-  width: 50%;
+  width: 48%;
+  height: auto;
   gap: 1rem;
   border-radius: 0.5rem;
 }
@@ -177,7 +179,7 @@ main .view3 .box2 h2 {
 main .view3 .box2 p {
   width: 95%;
   margin-top: 1rem;
-  opacity: 0.7;
+  opacity: 0.8;
   font-weight: 650;
   line-height: 1.5rem;
 }
@@ -187,8 +189,8 @@ main .view3 .box2 .experience {
   flex-direction: column;
 }
 main .view3 .box2 .experience .exp {
-  width: 70%;
-  margin: 0 0 0 0;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
   display: flex;
   align-items: center;
