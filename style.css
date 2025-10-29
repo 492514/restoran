@@ -11,7 +11,6 @@ html, body {
 
 main {
   width: 100%;
-  color: #F1F8FF;
 }
 main section {
   max-width: 2000px;
@@ -24,7 +23,6 @@ main header {
 main header .container {
   display: flex;
   padding: 1rem;
-  justify-content: center;
   align-items: center;
 }
 main header .container img {
@@ -44,6 +42,7 @@ main .view1 {
 }
 main .view1 .container1 {
   width: 100%;
+  color: #ffffff;
   padding: 1rem;
   height: 100vh;
   display: flex;
@@ -72,7 +71,8 @@ main .view1 .container1 .box1 p {
 main .view1 .container1 .box2 {
   height: 42%;
   display: flex;
-  overflow: hidden;
+  margin-top: 4rem;
+  overflow: visible;
   align-items: center;
   justify-content: center;
 }
@@ -97,13 +97,14 @@ main .view2 {
   gap: 2rem;
   padding: 1.5rem;
   flex-direction: column;
-  background: #434343;
+  background: #e8e8e8;
 }
 main .view2 .info {
   height: 25%;
+  border-radius: 0.7rem;
   padding: 1.5rem;
   line-height: 1.7rem;
-  background: #000000;
+  background: #ffffff;
 }
 main .view2 .info img {
   height: 25%;
@@ -132,7 +133,82 @@ main .view2 .info:hover img {
   border-radius: 0.7rem;
   background: #ededed;
 }
+main .view3 {
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+main .view3 .box1 {
+  width: 100%;
+  gap: 0.7rem;
+  padding: 0.5rem;
+}
+main .view3 .box1 .container {
+  width: 100%;
+  gap: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+main .view3 .box1 .container img {
+  height: 50%;
+  width: 50%;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+main .view3 .box1 .container .about {
+  height: 45%;
+  width: 45%;
+}
+main .view3 .box2 {
+  width: 100%;
+}
+main .view3 .box2 .about-us {
+  color: #FEA116;
+}
+main .view3 .box2 h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+main .view3 .box2 p {
+  width: 95%;
+  margin-top: 1rem;
+  opacity: 0.7;
+  font-weight: 650;
+  line-height: 1.5rem;
+}
+main .view3 .box2 .experience {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .view3 .box2 .experience .exp {
+  width: 70%;
+  margin: 0 0 0 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+main .view3 .box2 .experience .exp .p15 {
+  color: #fd7e14;
+  font-size: 2.7rem;
+  font-weight: bolder;
+}
+main .view3 .box2 .experience .exp .year {
+  opacity: 1;
+  font-size: large;
+  font-weight: 900;
+  margin-right: 1rem;
+  color: black;
+}
 @media (min-width: 900px) {
+  main header .container {
+    justify-content: center;
+  }
   main header .container img {
     height: 2%;
     width: 4%;
@@ -174,5 +250,45 @@ main .view2 .info:hover img {
   }
   main .view2 .info {
     width: 25%;
+  }
+  main .view3 {
+    flex-direction: row;
+  }
+  main .view3 .box1 .container img {
+    height: 40%;
+    width: 40%;
+  }
+  main .view3 .box1 .container .about {
+    height: 35%;
+    width: 35%;
+  }
+  main .view3 .box1, main .view3 .box2 {
+    width: 50%;
+  }
+  main .view3 .box2 {
+    margin-top: 3rem;
+  }
+  main .view3 .box2 h2 {
+    font-size: 2.5rem;
+  }
+  main .view3 .box2 p {
+    width: 90%;
+    opacity: 0.5;
+  }
+  main .view3 .box2 .experience {
+    gap: none;
+  }
+  main .view3 .box2 .experience .exp {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  main .view3 .box2 .experience .exp #pp15 {
+    margin-top: 7rem;
+  }
+  main .view3 .box2 .experience .exp .p15 {
+    opacity: 1;
+    color: #fd7e14;
+    font-size: 3.2rem;
   }
 }/*# sourceMappingURL=style.css.map */
