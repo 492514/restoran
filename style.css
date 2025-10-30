@@ -71,18 +71,20 @@ main .view1 .container1 .box1 p {
 main .view1 .container1 .box2 {
   height: 35%;
   display: flex;
-  overflow: hidden;
+  flex: 0 0 auto;
+  overflow: visible;
   align-items: center;
   -o-object-fit: cover;
      object-fit: cover;
   justify-content: center;
 }
 main .view1 .container1 .box2 img {
-  height: auto;
-  width: 80%;
-  max-width: 400px;
-  will-change: transform;
-  animation: rotate 22s linear infinite;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: rotate 8s linear infinite;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @keyframes rotate {
   from {
@@ -207,6 +209,68 @@ main .view3 .box2 .experience .exp .year {
   margin-right: 1rem;
   color: black;
 }
+main .view4 {
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding: 1rem;
+}
+main .view4 .box1 {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .view4 .box1 p {
+  font-size: x-large;
+  font-weight: 900;
+  color: #ff9900;
+}
+main .view4 .box1 h3 {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+main .view4 .box2 {
+  width: 100%;
+  padding: 1rem;
+}
+main .view4 .box2 .item {
+  display: flex;
+  gap: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+main .view4 .box2 .item :hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s ease;
+  border-radius: 0.8rem;
+  color: rgb(255, 255, 255);
+  background: #ff9900;
+}
+main .view4 .box2 .item img {
+  border-radius: 0.2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 1rem;
+}
+main .view4 .box2 .item .menu {
+  padding: 1rem;
+  line-height: 1.7rem;
+}
+main .view4 .box2 .item .menu h2 {
+  font-size: x-large;
+  font-weight: bolder;
+}
+main .view4 .box2 .item .menu p {
+  margin-top: 0.5rem;
+  font-size: large;
+  opacity: 0.7;
+  font-weight: 900;
+}
 @media (min-width: 900px) {
   main header .container {
     justify-content: center;
@@ -236,13 +300,15 @@ main .view3 .box2 .experience .exp .year {
     font-weight: lighter;
   }
   main .view1 .container1 .box2 {
+    flex: 0 0 auto;
     display: flex;
     overflow: visible;
     align-items: center;
     justify-content: center;
   }
   main .view1 .container1 .box2 img {
-    height: 220%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   main .view1 .container1 .box1, main .view1 .box2 {
     width: 50%;
@@ -292,5 +358,16 @@ main .view3 .box2 .experience .exp .year {
     opacity: 1;
     color: #fd7e14;
     font-size: 3.2rem;
+  }
+  main .view4 .box2 {
+    display: flex;
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+  }
+  main .view4 .box2 .item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
