@@ -211,8 +211,8 @@ main .view3 .box2 .experience .exp .year {
 }
 main .view4 {
   width: 100%;
-  color: white;
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color: rgb(245, 245, 245);
   padding: 1rem;
 }
 main .view4 .box1 {
@@ -271,6 +271,64 @@ main .view4 .box2 .item .menu p {
   opacity: 0.7;
   font-weight: 900;
 }
+main .view5 {
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view5 .box1 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  justify-content: center;
+  flex-direction: column;
+}
+main .view5 .box1 p {
+  font-size: x-large;
+  color: #FEA116;
+}
+main .view5 .box1 h3 {
+  font-size: xx-large;
+}
+main .view5 .box2 {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+main .view5 .box2 .container {
+  display: flex;
+  cursor: pointer;
+  line-height: 2rem;
+  background-color: rgb(245, 245, 245);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .view5 .box2 .container img:hover {
+  transform: scale(1.05);
+  transition: all 0.7s ease;
+}
+main .view5 .box2 .container img {
+  margin-top: 1rem;
+  width: 80%;
+  border-radius: 50%;
+}
+main .view5 .box2 .container h3 {
+  margin-top: 2rem;
+  font-size: x-large;
+}
+main .view5 .box2 .container p {
+  font-size: large;
+  font-weight: 900;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
 @media (min-width: 900px) {
   main header .container {
     justify-content: center;
@@ -307,6 +365,8 @@ main .view4 .box2 .item .menu p {
     justify-content: center;
   }
   main .view1 .container1 .box2 img {
+    height: 250%;
+    width: 250%;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -369,5 +429,11 @@ main .view4 .box2 .item .menu p {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  main .view5 .box2 {
+    flex-direction: row;
+  }
+  main .view5 .box2 .container {
+    width: 25%;
   }
 }/*# sourceMappingURL=style.css.map */
